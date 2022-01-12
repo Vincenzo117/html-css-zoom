@@ -16,6 +16,7 @@ body {
     background-color: black;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
 }
 
@@ -38,6 +39,7 @@ header {
     padding: 4px 6px;
     background-color: #4A4A4A;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
@@ -46,22 +48,23 @@ header {
 /* main */
 
 main {
-    padding: 45px 30px 28px;
+    padding: 45px 80px 28px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    align-content: center;
     flex-wrap: wrap;
-    gap: 6px 16px;
+    flex-grow: 1;
 }
 
 .user-box-wrapper {
-    width: 13vw;
-    object-fit: cover;
+    max-width: 12vw;
     position: relative;
 }
 
 .user-box-wrapper img {
     width: 100%;
+    height: 100%;
 }
 
 .user-info {
@@ -77,3 +80,50 @@ main {
 
 
 /* footer */
+
+footer {
+    height: 80px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mic-video-actions {
+    display: flex;
+    align-items: center;
+}
+
+.action {
+    text-align: center;
+    cursor: pointer;
+    margin: 0 15px 0 12px;
+}
+
+.action i {
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.drop-up-menu i {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+}
+
+.green-icon {
+    color: #4BC800;
+}
+
+.end-meeting {
+    padding: 0 20px;
+    background-color: #4A4A4A;
+    color: red;
+    cursor: pointer;
+    line-height: 80px;
+    white-space: nowrap;
+}
