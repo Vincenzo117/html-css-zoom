@@ -59,6 +59,7 @@ main {
 
 .user-box-wrapper {
     max-width: 12vw;
+    min-width: 100px;
     position: relative;
 }
 
