@@ -16,6 +16,7 @@ body {
     background-color: black;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 
@@ -45,16 +46,34 @@ header {
 /* main */
 
 main {
+    padding: 45px 30px 28px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 16px;
 }
 
-.img-wrapper {
+.user-box-wrapper {
     width: 13vw;
     object-fit: cover;
+    position: relative;
 }
 
-.img-wrapper img {
-    width: 13vw;
+.user-box-wrapper img {
+    width: 100%;
 }
+
+.user-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    font-size: calc(0.5vw + 5px);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+/* footer */
