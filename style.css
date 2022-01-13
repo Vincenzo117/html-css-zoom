@@ -12,7 +12,7 @@ html {
     color: white;
 }
 
-body {
+.container {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -55,6 +55,7 @@ main {
     align-content: center;
     flex-wrap: wrap;
     flex-grow: 1;
+    overflow: auto;
 }
 
 .user-box-wrapper {
@@ -92,13 +93,13 @@ footer {
 
 .mic-video-actions {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    gap: 10px;
 }
 
 .action {
     text-align: center;
     cursor: pointer;
-    margin: 0 15px 0 12px;
 }
 
 .action i {
@@ -113,7 +114,8 @@ footer {
 
 .toolbar {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    gap: 15px;
 }
 
 .green-icon {
